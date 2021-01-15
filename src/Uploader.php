@@ -11,7 +11,7 @@ class Uploader
     /**
      * @param Client $client
      */
-    public function __construct(Client $client)
+    public function __construct(?Client $client = null)
     {
         $this->client = $client;
     }
