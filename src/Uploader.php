@@ -60,7 +60,7 @@ class Uploader
     {
         $response = json_decode($response, true);
 
-        if (isset($response['result']['success']) && $response['result']['success'] == true) {
+        if (@$response['result']['success'] == true) {
             return [
                 'ok' => true,
                 'result' => [
@@ -92,7 +92,7 @@ class Uploader
     {
         $uploadResponse = json_decode($uploadResponse, true);
 
-        if (isset($response['result']['success']) && $uploadResponse['result']['success'] == true) {
+        if (@$uploadResponse['result']['success'] == true) {
             return [
                 'ok' => true,
                 'result' => [
