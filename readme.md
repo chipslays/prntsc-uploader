@@ -50,18 +50,11 @@ Upload image to prnt.sc from cache.
 
 ```php
 
-use Imgur\Client;
 use Prntsc\Uploader;
 
 require_once 'vendor/autoload.php';
 
-$client = new Client;
-$client->setOption('client_id', '48b6xxxxxxxxxxx');
-$client->setOption('client_secret', 'fd5048fxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
-
-$prntsc = new Uploader($client);
-
-$response = $prntsc->uploadFromCache('{"jsonrpc":"2.0","method":"save","id":"1","params":{"img_url":"https:\/\/i.imgur.com\/FXjRMZ4.jpg","thumb_url":"https:\/\/i.imgur.com\/FXjRMZ4.jpg","delete_hash":"FyUDDstquzhymYK","app_id":"{813F8739-7DC3-7EFFF9F0E13F}","width":500,"height":383,"dpr":"1"}}');
+$response = (new new Uploader)->uploadFromCache('{"jsonrpc":"2.0","method":"save","id":"1","params":{"img_url":"https:\/\/i.imgur.com\/FXjRMZ4.jpg","thumb_url":"https:\/\/i.imgur.com\/FXjRMZ4.jpg","delete_hash":"FyUDDstquzhymYK","app_id":"{813F8739-7DC3-7EFFF9F0E13F}","width":500,"height":383,"dpr":"1"}}');
 
 print_r($response);
 
