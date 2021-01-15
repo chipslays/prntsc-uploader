@@ -54,7 +54,7 @@ use Prntsc\Uploader;
 
 require_once 'vendor/autoload.php';
 
-$response = (new new Uploader)->uploadFromCache('{"jsonrpc":"2.0","method":"save","id":"1","params":{"img_url":"https:\/\/i.imgur.com\/FXjRMZ4.jpg","thumb_url":"https:\/\/i.imgur.com\/FXjRMZ4.jpg","delete_hash":"FyUDDstquzhymYK","app_id":"{813F8739-7DC3-7EFFF9F0E13F}","width":500,"height":383,"dpr":"1"}}');
+$response = (new Uploader)->uploadFromCache('{"jsonrpc":"2.0","method":"save","id":"1","params":{"img_url":"https:\/\/i.imgur.com\/FXjRMZ4.jpg","thumb_url":"https:\/\/i.imgur.com\/FXjRMZ4.jpg","delete_hash":"FyUDDstquzhymYK","app_id":"{813F8739-7DC3-7EFFF9F0E13F}","width":500,"height":383,"dpr":"1"}}');
 
 print_r($response);
 
