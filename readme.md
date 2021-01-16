@@ -12,7 +12,7 @@ $ composer require chipslays/prntsc-uploader
 
 #### `upload(string $file): array`
 
-Uplaod image to prnt.sc by local file or url.
+Upload image to prnt.sc by local file or url.
 
 ```php
 
