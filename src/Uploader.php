@@ -17,7 +17,7 @@ class Uploader
     }
 
     /**
-     * Uplaod image to prnt.sc by local file or url.
+     * Upload image to prnt.sc by local file or url.
      * 
      * @param string $path Local path to file or url.
      * 
