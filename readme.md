@@ -149,10 +149,8 @@ import subprocess
 import threading
 import sys
 
-
 def uploader():
     subprocess.run(["php", "upload.php"], stderr=sys.stderr, stdout=sys.stdout)
-
 
 if len(sys.argv) == 1:
     count = 1
@@ -171,6 +169,7 @@ if __name__ == "__main__":
 
 ```
 
+Time ot magic ✨
 ```bash
 $ python run.py <count_threads>
 ```
