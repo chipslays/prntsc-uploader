@@ -10,6 +10,8 @@ $ composer require chipslays/prntsc-uploader
 
 ## Usage
 
+For unlimited uploading without ban, you need get a `client_id` and `client_secret` [Imgur API](https://apidocs.imgur.com/).
+
 #### `upload(string $file): array`
 
 Upload image to prnt.sc by local file or url.
