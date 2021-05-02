@@ -1,5 +1,8 @@
 # Lightshot Uploader ([prnt.sc](https://prnt.sc/))
 
+[![Tests](https://github.com/chipslays/prntsc-uploader/actions/workflows/tests.yml/badge.svg)](https://github.com/chipslays/prntsc-uploader/actions/workflows/tests.yml)
+![Packagist Version](https://img.shields.io/packagist/v/chipslays/prntsc-uploader)
+
 Easy upload screenshots to Lightshot (prnt.sc).
 
 ## Installation
